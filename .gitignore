@@ -1,3 +1,4 @@
 .env
 .rag-chatbot
 data
+__pycache__/
