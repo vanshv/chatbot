@@ -4,14 +4,14 @@ from retry import retry
 from neo4j import GraphDatabase
 
 # Paths to CSV files containing hospital data
-pathto = "https://raw.githubusercontent.com/vanshv/chatbot/refs/heads/main/data/"
-HOSPITALS_CSV_PATH = pathto + "hospitals.csv"
-PAYERS_CSV_PATH = pathto + "payers.csv"
-PHYSICIANS_CSV_PATH = pathto + "physicians.csv"
-PATIENTS_CSV_PATH = pathto + "patients.csv"
-VISITS_CSV_PATH = pathto + "visits.csv"
-REVIEWS_CSV_PATH = pathto + "reviews.csv"
-EXAMPLE_CYPHER_CSV_PATH = pathto + "example_cypher.csv"
+path2Data = os.getenv("pathtoData")
+HOSPITALS_CSV_PATH = path2Data + "hospitals.csv"
+PAYERS_CSV_PATH = path2Data + "payers.csv"
+PHYSICIANS_CSV_PATH = path2Data + "physicians.csv"
+PATIENTS_CSV_PATH = path2Data + "patients.csv"
+VISITS_CSV_PATH = path2Data + "visits.csv"
+REVIEWS_CSV_PATH = path2Data + "reviews.csv"
+EXAMPLE_CYPHER_CSV_PATH = path2Data + "example_cypher.csv"
 
 # Neo4j config
 NEO4J_URI = os.getenv("NEO4J_URI")

@@ -12,13 +12,10 @@ from langchain.schema.runnable import RunnablePassthrough
 from langchain_qdrant import QdrantVectorStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.agents import (
-    create_openai_functions_agent,
     create_tool_calling_agent,
     Tool,
     AgentExecutor,
-    
 )
-from langchain import hub
 from langchain_core.prompts import ChatPromptTemplate
 from tools import get_current_wait_time
 

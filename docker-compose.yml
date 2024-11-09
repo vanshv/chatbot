@@ -1,8 +1,24 @@
-version: '3'
-
 services:
-  etl:
+  # etl:
+  #   build:
+  #     context: ./etl
+  #   env_file:
+  #     - .env
+      
+  api:
     build:
-      context: ./etl
+      context: ./api
     env_file:
       - .env
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    env_file:
+      - .env
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"

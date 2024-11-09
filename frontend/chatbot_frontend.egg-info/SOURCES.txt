@@ -1,0 +1,7 @@
+main.py
+pyproject.toml
+chatbot_frontend.egg-info/PKG-INFO
+chatbot_frontend.egg-info/SOURCES.txt
+chatbot_frontend.egg-info/dependency_links.txt
+chatbot_frontend.egg-info/requires.txt
+chatbot_frontend.egg-info/top_level.txt

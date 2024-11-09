@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: chatbot_api
+Version: 0.1
+Requires-Dist: python-dotenv
+Requires-Dist: langchain
+Requires-Dist: langchain-groq
+Requires-Dist: langchain-core
+Requires-Dist: langchain-qdrant
+Requires-Dist: langchain-google-genai
+Requires-Dist: google-generativeai
+Requires-Dist: neo4j
+Requires-Dist: asyncio
+Requires-Dist: fastapi
+Requires-Dist: numpy
+Requires-Dist: opentelemetry-api
+Requires-Dist: pydantic
+Requires-Dist: uvicorn
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"

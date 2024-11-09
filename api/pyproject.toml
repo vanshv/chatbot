@@ -1,0 +1,25 @@
+[project]
+name = "chatbot_api"
+version = "0.1"
+dependencies = [
+    "python-dotenv",
+    "langchain",
+    "langchain-groq",
+    "langchain-core",
+    "langchain-qdrant",
+    "langchain-google-genai",
+    "google-generativeai",
+    "neo4j",
+    # very important to not change this version
+    "langchain-community==0.3.0",
+
+    "asyncio",
+    "fastapi",
+    "numpy",
+    "opentelemetry-api",
+    "pydantic",
+    "uvicorn"
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8"]
